@@ -43,6 +43,15 @@ namespace minimal_api2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "adm@teste.com",
+                            Password = "123456",
+                            Poderes = 3
+                        });
                 });
 
             modelBuilder.Entity("minimal_api2.Entities.Veiculo", b =>

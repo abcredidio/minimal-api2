@@ -8,8 +8,8 @@ namespace minimal_api2.Entities
     public class Veiculo
     {
         public int Id { get; set; }
-        public string Modelo { get; set; }
-        public string Marca { get; set; }
+        public string Modelo { get; set; } = default!;
+        public string Marca { get; set; } = default!;
         public int Ano { get; set; }
         public int KmRodados { get; set; }
     }
